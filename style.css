@@ -61,15 +61,17 @@ body{
 }
 
 
-
-
 .content{
-    width: 1000px;
     margin-top: 17px;
     margin-bottom: 27px;
     display: flex;
     overflow-x: scroll;
 }
+.content::-webkit-scrollbar{
+    display: none;
+}
+
+
 .pratos{
     background-color: white;
     width: 172px;
