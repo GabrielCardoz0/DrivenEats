@@ -34,6 +34,7 @@ body {
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -46,4 +47,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Olá senhores */
 
