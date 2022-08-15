@@ -87,6 +87,7 @@ function fecharpedido(){
     hidden.classList.remove('esconde');
 }
 
+
     function cancelar (){
         let cancelar = document.querySelector('.teladeenvio');
         cancelar.classList.add('esconde');
