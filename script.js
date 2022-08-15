@@ -83,7 +83,6 @@ function fecharpedido(){
     bebida = document.querySelector('.Bebidas .selecionado .descricao .itemsolicitado').innerHTML;
     sobremesa = document.querySelector('.Sobremesas .selecionado .descricao .itemsolicitado').innerHTML;
     
-
     let pratinho = document.querySelector('.precopratoselecionado');
     pratinho.innerHTML = 'R$ '+precoprato.toFixed(2);
     let bebidinha = document.querySelector('.precobebidaselecionada');
