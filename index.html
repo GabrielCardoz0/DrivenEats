@@ -14,6 +14,36 @@
 
 <body>
 
+
+    <div class="teladeenvio esconde">
+        <div class="confirmeseupedido">
+            <div class="confirmar">Confirme seu pedido</div>
+            <div class="escolhidos">
+                <div class="itemprato">
+                    <h1 class="pratoselecionado">item 1</h1>
+                    <h2 class="precopratoselecionado">preço</h2>
+                </div>
+                <div class="itembebida">
+                    <h1 class="bebidaselecionada">item 2</h1>
+                    <h2 class="precobebidaselecionada">preço</h2>
+                </div>
+                <div class="itemsobrema">
+                    <h1 class="sobremesaselecionada">item 3</h1>
+                    <h2 class="precosobremesaselecionada">preço</h2>
+                </div>
+                <div class="Total">
+                    <h1>Total</h1>
+                    <h2 class="precototal">Subtotal</h2>
+                </div>
+            </div>
+
+            <div class="tudocerto">Tudo certo, pode pedir!</div>
+
+            <div class="cancelar" onclick="cancelar()">Cancelar</div>
+
+        </div>
+    </div>
+
     <div class="top-bar">
         <div>DrivenEats</div>
         <div>Sua comida em 6 minutos</div>
@@ -22,9 +52,6 @@
 
 
     <div class="page">
-
-
-
 
         <div class="titulo">Primeiro, seu prato</div> <!--end titulo-->
 
@@ -37,7 +64,7 @@
                     <div>Para os amantes da pizza com cebola.</div>
                     <div>R$<div class="preco">25,90</div> </div>
                 </div>
-                <div class="check"><ion-icon name="checkmark-circle"></ion-icon></div>
+                <div class="check esconde "><ion-icon name="checkmark-circle"></ion-icon></div>
             
             </div> <!--end item-->
 
@@ -48,7 +75,7 @@
                     <div>A pizza tradicional diretamente da Itália.</div>
                     <div>R$<div class="preco">27,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle-sharp"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle-sharp"></ion-icon>
             </div> <!--end item-->
 
             <div class="item" onclick="SelecionarPrato(this)">
@@ -58,7 +85,7 @@
                     <div>Uma saborosa pizza repleta de peperoni.</div>
                     <div>R$<div class="preco">28,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
             </div> <!--end item-->
 
             <div class="item" onclick="SelecionarPrato(this)">
@@ -68,7 +95,7 @@
                     <div>Para quem gosta da tradicional mussarela com tomate. </div>
                     <div>R$<div class="preco">24,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
 
             </div> <!--end item-->
 
@@ -86,7 +113,7 @@
                     <div>Coca-cola irresitível - 335ml.</div>
                     <div>R$<div class="preco">7,80</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
             </div> <!--end item-->
 
             <div class="item " onclick="SelecionarBebida(this)">
@@ -96,7 +123,7 @@
                     <div>Fanta sabor laranja - 335ml.</div>
                     <div>R$<div class="preco">6,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
             </div> <!--end item-->
 
             <div class="item " onclick="SelecionarBebida(this)">
@@ -106,7 +133,7 @@
                     <div>Para quem não quer guaraná - 335ml.</div>
                     <div>R$<div class="preco">5,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
             </div> <!--end item-->
 
             <div class="item " onclick="SelecionarBebida(this)">
@@ -116,7 +143,7 @@
                     <div>Para quem leva uma vida mais fit - 335ml.</div>
                     <div>R$<div class="preco">7,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
             </div> <!--end item-->
 
         </div> <!--end Bebidas-->
@@ -135,7 +162,7 @@
                     <div>Para quem ama bastante caramelo.</div>
                     <div>R$<div class="preco">12,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
             </div> <!--end item-->
 
             <div class="item " onclick="SelecionarSobremesa(this)">
@@ -145,7 +172,7 @@
                     <div>Um maravilhoso bolo acompanhado de sorvete.</div>
                     <div>R$<div class="preco">16,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
             </div> <!--end item-->
 
             <div class="item " onclick="SelecionarSobremesa(this)">
@@ -155,7 +182,7 @@
                     <div>Para quem já teve o desejo do doce do pica-pau.</div>
                     <div>R$<div class="preco">13,90</div> </div>                
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
 
             </div> <!--end item-->
 
@@ -166,23 +193,24 @@
                     <div>4 dos mais saboros canoles da casa.</div>
                     <div>R$<div class="preco">15,90</div> </div>
                 </div>
-                <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                <ion-icon class="check esconde" name="checkmark-circle"></ion-icon>
 
             </div> <!--end prato-->
 
         </div> <!--end Sobremesas-->
 
 
-        
+        <div class="bottom-bar">
+            <div class="selecione" onclick="fecharpedido();">
+                <div>Selecione os 3 itens para fechar o pedido</div>
+            </div>
+        </div> <!--end bottom-bar-->
+
     </div> <!--end page-->
 
 
 
-    <div class="bottom-bar">
-        <div class="selecione" onclick="fecharpedido();">
-            <div>Selecione os 3 itens para fechar o pedido</div>
-        </div>
-    </div> <!--end bottom-bar-->
+
 
 
 
